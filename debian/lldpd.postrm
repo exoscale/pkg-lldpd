@@ -4,6 +4,8 @@ set -e
 
 #DEBHELPER#
 
+dpkg-maintscript-helper rm_conffile /etc/bash_completion.d/lldpcli.bash-completion 0.7.15~ lldpd -- "$@"
+
 case "$1" in
     purge)
 	dpkg-statoverride --remove /usr/sbin/lldpcli

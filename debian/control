@@ -2,13 +2,19 @@ Source: lldpd
 Section: net
 Priority: optional
 Maintainer: Vincent Bernat <bernat@debian.org>
-Build-Depends: debhelper (>= 5), cdbs,
+Build-Depends: debhelper (>= 5),
+               cdbs,
                autotools-dev,
-               libsnmp-dev, libxml2-dev, libevent-dev, libreadline-dev,
-               libsensors4-dev,
+               libsnmp-dev,
+               libpci-dev,
+               libxml2-dev,
+               libjansson-dev,
+               libevent-dev,
+               libreadline-dev,
                libbsd-dev,
-               pkg-config
-Standards-Version: 3.9.4
+               pkg-config,
+               check
+Standards-Version: 3.9.6
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/lldpd.git
 Vcs-Git: git://anonscm.debian.org/collab-maint/lldpd.git
 Homepage: http://vincentbernat.github.com/lldpd/

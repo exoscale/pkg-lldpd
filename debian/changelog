@@ -1,3 +1,92 @@
+lldpd (0.7.19-1) unstable; urgency=medium
+
+  * New upstream release.
+     + Fix a buffer overflow when parsing management addresses. Not
+       exploitable, but can crash the process.
+
+ -- Vincent Bernat <bernat@debian.org>  Sat, 17 Oct 2015 19:43:41 +0200
+
+lldpd (0.7.17-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Add upstream GPG signature verification.
+
+ -- Vincent Bernat <bernat@debian.org>  Thu, 10 Sep 2015 15:04:53 +0200
+
+lldpd (0.7.16-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Update debian/lldpd.symbols to account for new versioning scheme.
+
+ -- Vincent Bernat <bernat@debian.org>  Sat, 08 Aug 2015 18:27:23 +0200
+
+lldpd (0.7.15-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Enable JSON output.
+  * Move bash completions to /usr/share/bash-completion/completions.
+
+ -- Vincent Bernat <bernat@debian.org>  Thu, 21 May 2015 21:34:42 +0200
+
+lldpd (0.7.14-2) unstable; urgency=medium
+
+  * Run unittests.
+
+ -- Vincent Bernat <bernat@debian.org>  Thu, 14 May 2015 20:47:38 +0200
+
+lldpd (0.7.14-1) unstable; urgency=medium
+
+  * New upstream release.
+     + All previous patches are unneeded. Drop them.
+
+ -- Vincent Bernat <bernat@debian.org>  Sun, 26 Apr 2015 17:26:56 +0200
+
+lldpd (0.7.11-2) unstable; urgency=medium
+
+  * Cherry-pick 0001-lib-fix-pkgconfig-file-substitutions.patch to fix
+    substitutions in .pc file in liblldpctl-dev package.
+
+ -- Vincent Bernat <bernat@debian.org>  Mon, 24 Nov 2014 08:51:28 +0100
+
+lldpd (0.7.11-1) unstable; urgency=medium
+
+  * New upstream version.
+  * Bump Standards-Version to 3.9.6.
+  * Cherry-pick 0001-systemd-fix-systemd-unit-file.patch to fix systemd
+    unit file.
+
+ -- Vincent Bernat <bernat@debian.org>  Sun, 26 Oct 2014 18:30:51 +0100
+
+lldpd (0.7.10-1) unstable; urgency=medium
+
+  * New upstream version.
+     + Update symbols.
+
+ -- Vincent Bernat <bernat@debian.org>  Sat, 26 Jul 2014 10:19:24 +0200
+
+lldpd (0.7.9-2) unstable; urgency=medium
+
+  * Depends again on libpci-dev as libsnmp-dev is not up-to-date in
+    kfreebsd.
+
+ -- Vincent Bernat <bernat@debian.org>  Sat, 05 Jul 2014 10:37:07 +0200
+
+lldpd (0.7.9-1) unstable; urgency=medium
+
+  * New upstream version.
+  * Drop dependency on libsensors4-dev and libpci-dev. libsnmp-dev now
+    depends on those.
+
+ -- Vincent Bernat <bernat@debian.org>  Sat, 31 May 2014 19:33:30 +0200
+
+lldpd (0.7.8-1) unstable; urgency=medium
+
+  * New upstream version.
+  * Depends on libpci-dev to workaround bug #744023. Closes: #746060.
+  * Bump Standards-Version to 3.9.5.
+
+ -- Vincent Bernat <bernat@debian.org>  Wed, 07 May 2014 13:37:16 +0200
+
 lldpd (0.7.7-1~precise0+exo1) precise; urgency=medium
 
   * Backport to Precise.
