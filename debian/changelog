@@ -1,12 +1,3 @@
-lldpd (0.7.7-1~precise0+exo1) precise; urgency=medium
-
-  * Backport to Precise.
-     + Don't do dh-autoreconf.
-     + Don't depends on dh-systemd.
-     + Relax cdbs dependency.
-
- -- Vincent Bernat <bernat@debian.org>  Fri, 29 May 2015 14:01:08 +0200
-
 lldpd (0.7.7-1) unstable; urgency=low
 
   * New upstream version.
