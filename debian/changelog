@@ -1,3 +1,9 @@
+lldpd (0.7.19-1~precise0+exo1) precise; urgency=medium
+
+  * Backport to Precise.
+
+ -- Vincent Bernat <bernat@debian.org>  Fri, 25 Nov 2016 10:17:56 +0100
+
 lldpd (0.7.19-1) unstable; urgency=medium
 
   * New upstream release.
